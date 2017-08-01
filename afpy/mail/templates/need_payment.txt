@@ -1,0 +1,51 @@
+# -*- coding: utf-8 -*-
+Bonjour,
+
+Vous recevez cet email car il semblerait que votre cotisation à l'AFPy ne soit
+pas à jour ou que nous soyons en attente d'un payment de votre part.
+
+%if 'cd' in user.groups:
+Vous êtes membres du commité directeur. Il est donc important que votre
+cotisation soit à jour.
+%endif
+%if user.membershipExpirationDate:
+Votre cotisation a expiré le ${user.membershipExpirationDate}
+%else:
+Vous n'avez jamais cotisé...
+%endif
+
+Votre login sur afpy.org est: ${user.uid}
+
+Rendez-vous a cette adresse pour vous identifier:
+
+http://www.afpy.org/membres/login
+
+Utilisez ce formulaire si vous avez oublié votre mot de passe:
+
+http://www.afpy.org/membres/password
+
+Vous pouvez consulter l'état de vos paiements à cette url:
+
+http://www.afpy.org/membres/#payments
+
+Si votre paiment est en attente, vous pouvez nous faire parvenir un chèque à
+l'ordre de l'AFPy à cette adresse:
+
+Association Francophone Python
+Chez ${signature.sn}
+${signature.street}
+${signature.postalCode} ${signature.l}, France
+
+Utilisez ce formulaire pour renouveler votre adhésion (CB / Paypal / Chèque):
+
+http://www.afpy.org/membres/my/subscribe_form
+
+En cas de problème veuillez contacter notre trésorier: tresorerie@afpy.org
+
+Pythonement,
+
+--
+${signature.sn}
+${signature.title.title()} de l'AFPy
+${afpy_org}
+

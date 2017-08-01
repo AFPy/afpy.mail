@@ -1,0 +1,36 @@
+# -*- coding: utf-8 -*-
+Bonjour et bienvenu !
+
+Votre inscription sur le site de l'AFPy a bien été prise en compte.
+
+Afin de la confirmer, veuillez vous rendre à l'url suivante:
+
+  ${confirm_url}
+
+Les comptes non confirmés sont supprimés régulièrement.
+
+Voici les informations à conserver:
+
+  Nom d'utilisateur: ${user.uid}
+
+  Mot de passe: ${passwd}
+
+Vous pouvez modifier ces informations en vous rendant à l'url:
+
+  ${afpy_org}/membres/#info
+
+En complétant votre code postal et votre ville, vous apparaîtrez sur la cartes
+des membres:
+
+  ${afpy_org}/membres/carte
+
+Vous pouvez, si vous le désirez, rejoindre l'association en vous rendant à l'url:
+
+  ${afpy_org}/membres/adhesion
+
+Pythonement,
+
+--
+Association Francophone PYthon
+${afpy_org}
+

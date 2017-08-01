@@ -1,0 +1,44 @@
+# -*- coding: utf-8 -*-
+Bonjour,
+
+et bienvenu à l'AFPy.
+
+Vous avez du remplir un formulaire d'adhésion lors de notre rencontre. Si ce
+n'était pas le cas, n'oubliez pas de nous renvoyer par courrier votre
+confirmation d'inscription quelque soit votre mode de paiement.  Vous pouvez
+imprimer ce courrier en vous rendant à l'url:
+
+  ${afpy_org}/membres/courrier
+
+Vous avez été inscrit à la liste de diffusion des membres de l'association.
+Vous pouvez désormais envoyer des email sur cette liste à l'adresse:
+
+  afpy-membres@lists.afpy.org
+
+Voici les informations que vous nous avez transmis:
+
+- Compte: ${user.uid}
+
+- Mot de passe: ${passwd}  
+
+- Nom: ${user.sn}
+
+- Email: ${user.email}
+
+- Type: ${paymentObject}
+
+Pour modifier wotre mot de passe rendez-vous à l'url:
+
+  http://www.afpy.org/membres/#password
+
+Vous pouvez suivre vos payements à l'url:
+
+  http://www.afpy.org/membres/#payments
+
+Pythonement,
+
+--
+${signature.sn} - ${signature.title}@afpy.org
+${signature.title.title()} de l'AFPy
+${afpy_org}
+

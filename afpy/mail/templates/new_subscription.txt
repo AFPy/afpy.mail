@@ -1,0 +1,56 @@
+# -*- coding: utf-8 -*-
+Bonjour,
+
+Nous vous confirmons la bonne réception de votre avis de payement et vous souhaitons donc la bienvenue à l'AFPy !
+
+%if paymentMode == 'cheque':
+Pour confirmer votre adhésion, vous devez maintenant nous faire parvenir votre
+réglement.  Vous avez choisis de regler par chèque. Veuillez nous faire
+parvenir votre chèque à:
+
+Association Francophone Python
+A l'attention de ${signature.sn}, ${signature.title.title()} de l'association
+${signature.street}
+${signature.postalCode} ${signature.l}, France
+%endif
+
+Si vous venez de rejoindre l'association, n'oubliez pas de nous renvoyer par
+courrier votre confirmation d'inscription quelque soit votre mode de paiement.
+Vous pouvez imprimer ce courrier en vous rendant à l'url:
+
+  http://www.afpy.org/membres/courrier?notheme=true
+
+Vous avez été inscrit à la liste de diffusion des membres de l'association.
+Vous pouvez désormais envoyer des email sur cette liste à l'adresse:
+
+  afpy-membres@lists.afpy.org
+
+Voici les informations que vous nous avez transmis:
+
+- Compte: ${user.uid}
+
+- Nom: ${user.sn}
+
+- Email: ${user.email}
+
+- Type: ${paymentObject}
+
+- Mode de paiement: ${paymentMode}
+
+%if paymentComment:
+- Commentaire::
+
+  ${paymentComment}
+%endif
+
+Vous pouvez suivre vos payements à l'url:
+
+  http://www.afpy.org/membres/#payments
+
+Pythonement,
+
+--
+${signature.sn} - ${signature.title}@afpy.org
+${signature.title.title()} de l'AFPy
+${afpy_org}
+
